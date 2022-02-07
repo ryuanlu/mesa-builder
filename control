@@ -1,0 +1,19 @@
+Package: mesa
+Version: ${MESA_VERSION}
+Architecture: ${MESA_ARCH}
+Multi-Arch: same
+Maintainer: 盧瑞元 (Ruei-Yuan Lu) <RueiYuan.Lu@gmail.com>
+Depends: libc6, libelf1, libexpat1, libgcc-s1, libllvm11, libpciaccess0, libsensors5, libstdc++6, libwayland-client0, libwayland-server0, libx11-6, libx11-xcb1, libxcb1, libxcb-dri2-0, libxcb-dri3-0, libxcb-glx0, libxcb-present0, libxcb-randr0, libxcb-shm0, libxcb-sync1, libxcb-xfixes0, libxext6, libxfixes3, libxshmfence1, libxxf86vm1, zlib1g
+Provides: libdrm2 (= ${LIBDRM_VERSION}), libdrm-amdgpu1 (= ${LIBDRM_VERSION}), libdrm-common (= ${LIBDRM_VERSION}), libdrm-dev (= ${LIBDRM_VERSION}), libdrm-intel1 (= ${LIBDRM_VERSION}), libdrm-nouveau2 (= ${LIBDRM_VERSION}), libdrm-radeon1 (= ${LIBDRM_VERSION}), libdrm-tests (= ${LIBDRM_VERSION}), libegl1-mesa (= ${MESA_VERSION}), libegl1-mesa-dev (= ${MESA_VERSION}), libegl-mesa0 (= ${MESA_VERSION}), libgbm1 (= ${MESA_VERSION}), libgbm-dev (= ${MESA_VERSION}), libgl1-mesa-dev (= ${MESA_VERSION}), libgl1-mesa-dri (= ${MESA_VERSION}), libgl1-mesa-glx (= ${MESA_VERSION}), libglapi-mesa (= ${MESA_VERSION}), libgles2-mesa (= ${MESA_VERSION}), libgles2-mesa-dev (= ${MESA_VERSION}), libglx-mesa0 (= ${MESA_VERSION}), mesa-common-dev (= ${MESA_VERSION}), mesa-va-drivers (= ${MESA_VERSION}), mesa-vdpau-drivers (= ${MESA_VERSION}), mesa-vulkan-drivers (= ${MESA_VERSION})
+Section: libs
+Priority: optional
+Homepage: https://www.mesa3d.org/
+Description: Mesa 3D
+ The Mesa project began as an open-source implementation of the OpenGL specification - a system for rendering interactive 3D graphics.
+ .
+ Over the years the project has grown to implement more graphics APIs, including OpenGL ES, OpenCL, OpenMAX, VDPAU, VA-API, XvMC, Vulkan and EGL.
+ .
+ A variety of device drivers allows the Mesa libraries to be used in many different environments ranging from software emulation to complete hardware acceleration for modern GPUs.
+ .
+ Mesa ties into several other open-source projects: the Direct Rendering Infrastructure, X.org, and Wayland to provide OpenGL support on Linux, FreeBSD, and other operating systems.
+
