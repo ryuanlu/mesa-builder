@@ -49,7 +49,7 @@ $(foreach arch,$(ARCH),prepare_$(arch)): prepare_%: % debian/%
 	ln -sf libgallium_dri.so debian/$${ARCH}/usr/lib/$${LIBPATH}/dri/kms_swrast_dri.so
 	ln -sf libgallium_dri.so debian/$${ARCH}/usr/lib/$${LIBPATH}/dri/radeonsi_dri.so
 	ln -sf libgallium_dri.so debian/$${ARCH}/usr/lib/$${LIBPATH}/dri/swrast_dri.so
-	[ "$${ARCH}" = "i386" ] && rm -rf debian/$${ARCH}/usr/include debian/$${ARCH}/usr/share/
+	[ "$${ARCH}" = "i386" ] && rm -rf debian/$${ARCH}/usr/include debian/$${ARCH}/usr/share/*
 	[ "$${ARCH}" = "i386" ] && cp -r overlay/diff/$${ARCH}/target/usr/share/vulkan debian/$${ARCH}/usr/share/
 	exit 0
 
