@@ -1,6 +1,7 @@
 bison
 build-essential
 flex
+glslang-tools
 libclang-dev
 libelf-dev
 libpciaccess-dev
