@@ -1,0 +1,4 @@
+usr/include
+usr/share/drirc.d
+usr/share/glvnd
+usr/bin

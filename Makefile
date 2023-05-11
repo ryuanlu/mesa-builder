@@ -3,7 +3,7 @@
 .DEFAULT_GOAL:=all
 
 ARCH:=amd64 i386
-DISTRO:=bullseye
+DISTRO:=bookworm
 REVISION:=1
 DEBIAN_APT_REPO:=http://opensource.nchc.org.tw/debian
 WAYLAND_OPTS:=-Ddocumentation=false
